@@ -1,0 +1,62 @@
+/* --- Hero Actions & Follow Widget --- */
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.follow-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center content initially */
+    height: 48px;
+    /* Matches btn-pill padding + line-height approx */
+    padding: 0 32px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+}
+
+.follow-widget:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.follow-icons {
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    margin-right: 0;
+    /* Will animate to margin-right: 15px */
+}
+
+.follow-icons a {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.follow-icons a:hover {
+    color: var(--accent);
+    transform: scale(1.2);
+}
+
+.follow-label {
+    position: relative;
+    z-index: 2;
+}
