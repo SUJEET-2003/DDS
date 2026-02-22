@@ -785,33 +785,27 @@ h3 {
         .menu-toggle {
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 5px;
             cursor: pointer;
             z-index: 2000;
-            /* Force Top Layer */
             pointer-events: auto;
-            /* Ensure clickable */
-            /* Blue Square Styling */
-            background-color: #0F172A;
-            /* Deep Blue bg */
-            padding: 12px;
-            border-radius: 8px;
-            /* Rounded Edges */
-            width: 54px;
-            height: 48px;
+            background-color: #000000;
+            padding: 0;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
             justify-content: center;
             align-items: center;
-            /* Fix Position to escape parent stacking context */
             position: fixed;
-            top: 20px;
-            right: 20px;
+            top: 10px;
+            right: 16px;
         }
 
         .bar {
-            width: 30px;
-            height: 3px;
+            width: 20px;
+            height: 2px;
             background: #FFFFFF;
-            /* White for Hero Section */
+            border-radius: 2px;
             transition: 0.3s;
         }
 
@@ -943,9 +937,8 @@ h3 {
 
         /* Animate Hamburger to X */
         .menu-toggle.open .bar:nth-child(1) {
-            transform: translateY(9px) rotate(45deg);
+            transform: translateY(7px) rotate(45deg);
             background: #FFFFFF;
-            /* Keep white on blue square */
         }
 
         .menu-toggle.open .bar:nth-child(2) {
@@ -953,9 +946,8 @@ h3 {
         }
 
         .menu-toggle.open .bar:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
+            transform: translateY(-7px) rotate(-45deg);
             background: #FFFFFF;
-            /* Keep white */
         }
     }
 
@@ -1871,6 +1863,8 @@ h3 {
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease;
+    resize: none;
+    /* Removed default resize handle */
 }
 
 .minimal-contact-form input::placeholder,
@@ -2871,12 +2865,10 @@ h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 88px;
-    /* Matches padding/toggle height */
+    height: 64px;
 
     /* Soft Glass Effect with Curves */
     background: rgba(255, 255, 255, 0.6);
-    /* 60% Opacity */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 
@@ -2884,14 +2876,12 @@ h3 {
     /* Below Toggle (2000) */
     display: flex;
     align-items: center;
-    /* Restored centering */
-    padding-left: 24px;
+    padding-left: 20px;
     transform: translateY(-100%);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 0 0 16px 16px;
-    /* Reduced Curve */
+    border-radius: 0 0 12px 12px;
 }
 
 /* --- Mobile Menu Styles (No Underline) --- */
@@ -2958,10 +2948,9 @@ h3 {
 .mobile-brand {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: -0.5px;
     color: #000000;
-    /* Black text for white header */
     text-decoration: none;
 }
 
